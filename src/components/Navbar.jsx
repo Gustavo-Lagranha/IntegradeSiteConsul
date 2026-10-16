@@ -34,6 +34,7 @@ export default function Navbar() {
             className="h-9 w-auto md:h-11"
             width="220"
             height="44"
+            decoding="async"
           />
         </Link>
 

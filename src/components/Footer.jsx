@@ -15,6 +15,8 @@ export default function Footer() {
               className="h-11 w-auto"
               width="220"
               height="44"
+              loading="lazy"
+              decoding="async"
             />
           </Link>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-white/80">
