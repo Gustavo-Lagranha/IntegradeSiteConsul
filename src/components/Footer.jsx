@@ -8,18 +8,16 @@ export default function Footer() {
     <footer className="bg-brand text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-white font-bold text-brand">
-              IC
-            </span>
-            <span className="flex flex-col leading-tight">
-              <span className="text-lg font-bold text-white">Integrade</span>
-              <span className="text-xs tracking-widest text-white/80">
-                CONSULTING
-              </span>
-            </span>
-          </div>
-          <p className="mt-4 max-w-md text-sm leading-relaxed text-white/80">
+          <Link to="/" aria-label="Integrade Consulting — Página inicial">
+            <img
+              src="/images/Logo_integrade_Consulting-Horizontal-branco.png"
+              alt="Integrade Consulting"
+              className="h-11 w-auto"
+              width="220"
+              height="44"
+            />
+          </Link>
+          <p className="mt-5 max-w-md text-sm leading-relaxed text-white/80">
             Soluções completas em controle patrimonial, inventário, avaliações e
             identificação de ativos com tecnologia RFID, QR-Code e Código de
             Barras.

@@ -22,17 +22,19 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-brand-dark bg-brand">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link to="/" className="flex items-center gap-3">
-          <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-white font-bold text-brand">
-            IC
-          </span>
-          <span className="flex flex-col leading-tight">
-            <span className="text-lg font-bold text-white">Integrade</span>
-            <span className="text-xs tracking-widest text-white/80">
-              CONSULTING
-            </span>
-          </span>
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+        <Link
+          to="/"
+          className="flex items-center"
+          aria-label="Integrade Consulting — Página inicial"
+        >
+          <img
+            src="/images/Logo_integrade_Consulting-Horizontal-branco.png"
+            alt="Integrade Consulting"
+            className="h-9 w-auto md:h-11"
+            width="220"
+            height="44"
+          />
         </Link>
 
         <div className="hidden items-center gap-6 lg:flex">
