@@ -111,9 +111,9 @@ const solutions = [
 export default function Solucoes() {
   return (
     <div>
-      <section className="border-b border-slate-800 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+      <section className="border-b border-slate-800 bg-gradient-to-br from-slate-950 via-slate-900 to-brand-deep">
         <div className="mx-auto max-w-7xl px-6 py-20">
-          <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">
+          <span className="text-xs font-semibold uppercase tracking-wider text-brand-light">
             Soluções
           </span>
           <h1 className="mt-4 max-w-3xl text-4xl font-bold text-white md:text-5xl">
@@ -136,7 +136,7 @@ export default function Solucoes() {
               className="rounded-2xl border border-slate-800 bg-slate-900/60 p-8"
             >
               <div className="flex items-center gap-4">
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl">
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-2xl">
                   {solution.icon}
                 </span>
                 <h2 className="text-xl font-semibold text-white">
@@ -149,7 +149,7 @@ export default function Solucoes() {
               <ul className="mt-6 space-y-3">
                 {solution.items.map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-slate-300">
-                    <span className="mt-0.5 text-emerald-400">✔</span>
+                    <span className="mt-0.5 text-brand-light">✔</span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -170,7 +170,7 @@ export default function Solucoes() {
           </p>
           <Link
             to="/contato"
-            className="mt-8 inline-flex rounded-lg bg-emerald-500 px-8 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400"
+            className="mt-8 inline-flex rounded-lg bg-brand px-8 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
           >
             Solicitar Proposta
           </Link>

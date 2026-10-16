@@ -36,9 +36,9 @@ const clientSegments = [
 export default function Sobre() {
   return (
     <div>
-      <section className="border-b border-slate-800 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+      <section className="border-b border-slate-800 bg-gradient-to-br from-slate-950 via-slate-900 to-brand-deep">
         <div className="mx-auto max-w-7xl px-6 py-20">
-          <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">
+          <span className="text-xs font-semibold uppercase tracking-wider text-brand-light">
             Sobre nós
           </span>
           <h1 className="mt-4 max-w-3xl text-4xl font-bold text-white md:text-5xl">
@@ -94,14 +94,14 @@ export default function Sobre() {
                 'Suporte a RFID, QR-Code e Código de Barras',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-slate-300">
-                  <span className="mt-0.5 text-emerald-400">✔</span>
+                  <span className="mt-0.5 text-brand-light">✔</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
             <Link
               to="/solucoes"
-              className="mt-8 inline-flex rounded-lg bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400"
+              className="mt-8 inline-flex rounded-lg bg-brand px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
             >
               Ver todas as soluções
             </Link>
@@ -118,7 +118,7 @@ export default function Sobre() {
                 key={value.title}
                 className="rounded-xl border border-slate-800 bg-slate-950 p-6"
               >
-                <h3 className="text-base font-semibold text-emerald-400">
+                <h3 className="text-base font-semibold text-brand-light">
                   {value.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-400">
@@ -144,7 +144,7 @@ export default function Sobre() {
               key={segment}
               className="flex items-center gap-3 rounded-xl border border-slate-800 bg-slate-900/60 px-6 py-5 text-sm text-slate-300"
             >
-              <span className="h-2 w-2 rounded-full bg-emerald-400" />
+              <span className="h-2 w-2 rounded-full bg-brand-light" />
               {segment}
             </div>
           ))}

@@ -28,9 +28,9 @@ const depoimentos = [
 export default function Clientes() {
   return (
     <div>
-      <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 py-16 lg:py-20">
+      <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-brand-deep py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="text-cyan-400 text-sm font-semibold tracking-wider uppercase">Clientes</span>
+          <span className="text-brand-light text-sm font-semibold tracking-wider uppercase">Clientes</span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-white">Empresas que confiam no nosso trabalho</h1>
           <p className="mt-6 text-lg text-slate-300 max-w-3xl leading-relaxed">
             Atendemos organizações de diferentes segmentos, sempre com o compromisso de entregar
@@ -43,9 +43,9 @@ export default function Clientes() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
             {clientes.map((c) => (
-              <div key={c.name} className="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col items-center justify-center text-center h-32 hover:border-cyan-500/50 transition-colors">
+              <div key={c.name} className="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col items-center justify-center text-center h-32 hover:border-brand/50 transition-colors">
                 <div className="text-lg font-bold text-slate-200">{c.name}</div>
-                <div className="mt-2 text-xs text-cyan-400">{c.tag}</div>
+                <div className="mt-2 text-xs text-brand-light">{c.tag}</div>
               </div>
             ))}
           </div>
@@ -58,7 +58,7 @@ export default function Clientes() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {depoimentos.map((d) => (
               <div key={d.company} className="p-8 rounded-xl bg-slate-950 border border-slate-800">
-                <div className="text-cyan-400 text-3xl leading-none mb-4">&ldquo;</div>
+                <div className="text-brand-light text-3xl leading-none mb-4">&ldquo;</div>
                 <p className="text-slate-300 leading-relaxed">{d.text}</p>
                 <div className="mt-6">
                   <div className="font-semibold text-white">{d.author}</div>
@@ -70,12 +70,12 @@ export default function Clientes() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-r from-blue-700 to-cyan-600">
+      <section className="py-16 bg-gradient-to-r from-brand-dark to-brand">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-white text-center md:text-left">
             Faça parte da nossa lista de clientes
           </h2>
-          <Link to="/contato" className="flex-shrink-0 px-6 py-3 rounded-lg bg-slate-950 hover:bg-slate-800 text-white font-semibold transition-colors">
+          <Link to="/contato" className="flex-shrink-0 px-6 py-3 rounded-lg bg-white hover:bg-slate-100 text-brand font-semibold transition-colors">
             Falar com um especialista
           </Link>
         </div>

@@ -32,9 +32,9 @@ const aplicacoes = [
 export default function Tecnologias() {
   return (
     <div>
-      <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 py-16 lg:py-20">
+      <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-brand-deep py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="text-cyan-400 text-sm font-semibold tracking-wider uppercase">Tecnologias</span>
+          <span className="text-brand-light text-sm font-semibold tracking-wider uppercase">Tecnologias</span>
           <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-white">RFID, QR-Code e Código de Barras</h1>
           <p className="mt-6 text-lg text-slate-300 max-w-3xl leading-relaxed">
             Definimos a tecnologia ideal para cada operação, garantindo precisão, agilidade e
@@ -48,7 +48,7 @@ export default function Tecnologias() {
           {tecnologias.map((t) => (
             <div key={t.tag} className="p-8 rounded-xl bg-slate-900 border border-slate-800 grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div>
-                <span className="inline-block px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-sm font-bold mb-3">{t.tag}</span>
+                <span className="inline-block px-3 py-1 rounded-md bg-brand/10 text-brand-light text-sm font-bold mb-3">{t.tag}</span>
                 <h2 className="text-2xl font-bold text-white leading-snug">{t.title}</h2>
               </div>
               <div className="lg:col-span-2">
@@ -56,7 +56,7 @@ export default function Tecnologias() {
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {t.vantagens.map((v) => (
                     <div key={v} className="flex items-center gap-2 text-sm text-slate-300">
-                      <span className="text-cyan-400">✓</span> {v}
+                      <span className="text-brand-light">✓</span> {v}
                     </div>
                   ))}
                 </div>
@@ -79,7 +79,7 @@ export default function Tecnologias() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link to="/contato" className="px-6 py-3 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold inline-block transition-colors">
+            <Link to="/contato" className="px-6 py-3 rounded-lg bg-brand hover:bg-brand-dark text-white font-semibold inline-block transition-colors">
               Quero implementar na minha empresa
             </Link>
           </div>

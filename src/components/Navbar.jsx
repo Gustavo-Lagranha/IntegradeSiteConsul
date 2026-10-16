@@ -15,19 +15,21 @@ export default function Navbar() {
 
   const linkClass = ({ isActive }) =>
     `text-sm font-medium transition-colors ${
-      isActive ? 'text-emerald-400' : 'text-slate-300 hover:text-white'
+      isActive
+        ? 'text-white underline decoration-2 underline-offset-8'
+        : 'text-white/80 hover:text-white'
     }`;
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-brand-dark bg-brand">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link to="/" className="flex items-center gap-3">
-          <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500 font-bold text-slate-950">
+          <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-white font-bold text-brand">
             IC
           </span>
           <span className="flex flex-col leading-tight">
             <span className="text-lg font-bold text-white">Integrade</span>
-            <span className="text-xs tracking-widest text-emerald-400">
+            <span className="text-xs tracking-widest text-white/80">
               CONSULTING
             </span>
           </span>
@@ -41,7 +43,7 @@ export default function Navbar() {
           ))}
           <Link
             to="/contato"
-            className="rounded-lg bg-emerald-500 px-5 py-2 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400"
+            className="rounded-lg bg-white px-5 py-2 text-sm font-semibold text-brand transition hover:bg-brand-dark hover:text-white"
           >
             Solicitar Orçamento
           </Link>
@@ -50,7 +52,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setOpen(!open)}
-          className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-700 text-slate-200 lg:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/40 text-white lg:hidden"
           aria-label="Abrir menu"
         >
           <span className="text-xl">{open ? '✕' : '☰'}</span>
@@ -58,7 +60,7 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-slate-800 bg-slate-950 px-6 py-4 lg:hidden">
+        <div className="border-t border-brand-dark bg-brand px-6 py-4 lg:hidden">
           <div className="flex flex-col gap-4">
             {links.map((link) => (
               <NavLink
@@ -74,7 +76,7 @@ export default function Navbar() {
             <Link
               to="/contato"
               onClick={() => setOpen(false)}
-              className="rounded-lg bg-emerald-500 px-5 py-2 text-center text-sm font-semibold text-slate-950"
+              className="rounded-lg bg-white px-5 py-2 text-center text-sm font-semibold text-brand"
             >
               Solicitar Orçamento
             </Link>

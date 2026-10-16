@@ -85,17 +85,17 @@ export default function Home() {
   return (
     <div>
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-slate-800 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
-        <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-emerald-500/10 blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-emerald-500/10 blur-3xl" />
+      <section className="relative overflow-hidden border-b border-slate-800 bg-gradient-to-br from-slate-950 via-slate-900 to-brand-deep">
+        <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-brand/20 blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-brand/10 blur-3xl" />
         <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-emerald-400">
+            <span className="inline-flex items-center rounded-full border border-brand/30 bg-brand/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-light">
               Controle Patrimonial · Inventário · Avaliações
             </span>
             <h1 className="mt-6 text-4xl font-bold leading-tight text-white md:text-6xl">
               Gestão patrimonial{' '}
-              <span className="text-emerald-400">completa</span> para sua empresa
+              <span className="text-brand-light">completa</span> para sua empresa
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-slate-300">
               A Integrade Consulting oferece uma solução completa em controle
@@ -106,13 +106,13 @@ export default function Home() {
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
                 to="/contato"
-                className="rounded-lg bg-emerald-500 px-7 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400"
+                className="rounded-lg bg-brand px-7 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
               >
                 Solicitar Orçamento
               </Link>
               <Link
                 to="/solucoes"
-                className="rounded-lg border border-slate-700 px-7 py-3 text-sm font-semibold text-slate-200 transition hover:border-emerald-500 hover:text-white"
+                className="rounded-lg border border-slate-700 px-7 py-3 text-sm font-semibold text-slate-200 transition hover:border-brand hover:text-white"
               >
                 Conhecer Soluções
               </Link>
@@ -126,7 +126,7 @@ export default function Home() {
                 { value: 'BR', label: 'Atendimento nacional' },
               ].map((stat) => (
                 <div key={stat.label}>
-                  <p className="text-3xl font-bold text-emerald-400">{stat.value}</p>
+                  <p className="text-3xl font-bold text-brand-light">{stat.value}</p>
                   <p className="mt-1 text-xs text-slate-400">{stat.label}</p>
                 </div>
               ))}
@@ -151,7 +151,7 @@ export default function Home() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="group rounded-2xl border border-slate-800 bg-slate-900/60 p-8 transition hover:border-emerald-500/50 hover:bg-slate-900"
+              className="group rounded-2xl border border-slate-800 bg-slate-900/60 p-8 transition hover:border-brand/50 hover:bg-slate-900"
             >
               <span className="text-3xl">{service.icon}</span>
               <h3 className="mt-5 text-lg font-semibold text-white">
@@ -184,7 +184,7 @@ export default function Home() {
                 key={tech.title}
                 className="rounded-2xl border border-slate-800 bg-slate-950 p-8 text-center"
               >
-                <span className="inline-flex items-center rounded-full bg-emerald-500/10 px-4 py-1.5 text-sm font-semibold text-emerald-400">
+                <span className="inline-flex items-center rounded-full bg-brand/10 px-4 py-1.5 text-sm font-semibold text-brand-light">
                   {tech.tag}
                 </span>
                 <h3 className="mt-5 text-lg font-semibold text-white">
@@ -213,7 +213,7 @@ export default function Home() {
             </p>
             <Link
               to="/sobre"
-              className="mt-8 inline-flex rounded-lg bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400"
+              className="mt-8 inline-flex rounded-lg bg-brand px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
             >
               Sobre a Integrade
             </Link>
@@ -238,18 +238,18 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-slate-800 bg-gradient-to-r from-emerald-600 to-emerald-500">
+      <section className="bg-gradient-to-r from-brand-dark to-brand">
         <div className="mx-auto max-w-7xl px-6 py-16 text-center">
-          <h2 className="text-2xl font-bold text-slate-950 md:text-3xl">
+          <h2 className="text-2xl font-bold text-white md:text-3xl">
             Pronto para transformar a gestão patrimonial da sua empresa?
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-slate-900">
+          <p className="mx-auto mt-4 max-w-2xl text-white/90">
             Fale com nossos especialistas e receba uma proposta personalizada para
             o seu parque de ativos.
           </p>
           <Link
             to="/contato"
-            className="mt-8 inline-flex rounded-lg bg-slate-950 px-8 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+            className="mt-8 inline-flex rounded-lg bg-white px-8 py-3 text-sm font-semibold text-brand transition hover:bg-slate-100"
           >
             Entrar em Contato
           </Link>

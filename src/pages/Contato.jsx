@@ -20,13 +20,13 @@ export default function Contato() {
   };
 
   const inputClass =
-    'w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition focus:border-emerald-500';
+    'w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition focus:border-brand';
 
   return (
     <div>
-      <section className="border-b border-slate-800 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+      <section className="border-b border-slate-800 bg-gradient-to-br from-slate-950 via-slate-900 to-brand-deep">
         <div className="mx-auto max-w-7xl px-6 py-20">
-          <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">
+          <span className="text-xs font-semibold uppercase tracking-wider text-brand-light">
             Contato
           </span>
           <h1 className="mt-4 max-w-3xl text-4xl font-bold text-white md:text-5xl">
@@ -48,7 +48,7 @@ export default function Contato() {
             </h2>
             <div className="mt-8 space-y-6">
               <div className="flex items-start gap-4">
-                <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-500/10 text-lg">
+                <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-brand/10 text-lg">
                   ✉️
                 </span>
                 <div>
@@ -59,7 +59,7 @@ export default function Contato() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-500/10 text-lg">
+                <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-brand/10 text-lg">
                   🌐
                 </span>
                 <div>
@@ -70,7 +70,7 @@ export default function Contato() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-500/10 text-lg">
+                <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-brand/10 text-lg">
                   📍
                 </span>
                 <div>
@@ -81,7 +81,7 @@ export default function Contato() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-500/10 text-lg">
+                <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-brand/10 text-lg">
                   ⏱️
                 </span>
                 <div>
@@ -183,7 +183,7 @@ export default function Contato() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full rounded-lg bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400"
+                    className="w-full rounded-lg bg-brand px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
                   >
                     Enviar Mensagem
                   </button>
